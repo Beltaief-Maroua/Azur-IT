@@ -4,7 +4,8 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import Accueil from './Views/Accueil';
 import Mission from './Components/Mission';
-import Partner from './Components/Partner'; 
+import Partner from './Components/Partner';
+import FooterNavbar from './Components/FooterNavbar';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,6 +14,7 @@ root.render(
     <Accueil />
     <Mission />
     <Partner />
+    <FooterNavbar />
   </React.StrictMode>
 );
 
