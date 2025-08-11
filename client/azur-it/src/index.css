@@ -7,13 +7,13 @@
   --grey:#8E8E8E;
   --lightGrey:#ADADAD;
   --offWhite:#F4FDFE;
+  --cardColor:#FBFDFF;
 
 }
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont,  'Roboto',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
