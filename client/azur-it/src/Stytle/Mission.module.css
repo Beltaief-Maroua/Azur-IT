@@ -1,13 +1,12 @@
 .container
 {
-    background-color: var(--cardColor);
+    
     background: linear-gradient(
         90deg,
         #EBEFFE 0%,
         #F4FDFE 50%,
         #F0FBFE 100%
     );
-        border:2px solid transparent;
     
 
 }
@@ -17,7 +16,7 @@
         font-size: 3rem;
         font-weight: 600;
         text-align: center;
-        margin: 1rem;
+        padding: 1rem;
     }
     .card
     {
