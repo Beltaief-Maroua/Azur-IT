@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/blueLogo.jpg";
+import Logo from "../assets/simpleLogo.png";
 import style from "../Stytle/MyNavbar.module.css";
 
 const MyNavbar = () => {
@@ -15,7 +15,7 @@ const MyNavbar = () => {
       </nav>
 
       <nav
-        className={`${style.navbar} ${style.navbarLight} ${style.bgLight} navbar-expand-lg `}
+        className={`${style.navbar} ${style.navbarLight} ${style.bgLight} navbar-expand-lg`}
       >
         {/* <a className={style.navbarBrand} href="x">
           Navbar
@@ -36,33 +36,33 @@ const MyNavbar = () => {
           id="navbarNav"
         >
           <ul className={`${style.navbarNav} d-flex justify-content-around align-items-center `}>
-            <li className={`${style.navItem} ${style.active}`}>
-              <a className={style.navLink} href="x">
+            <li className={`${style.navItem} ${style.active} `}>
+              <a className={`${style.navLink} text-white `} href="x">
                 Accueil <span className={style.srOnly}></span>
               </a>
             </li>
             <li className={style.navItem}>
-              <a className={style.navLink} href="x">
+              <a className={`${style.navLink} text-white `} href="x">
                 Services
               </a>
             </li>
             <li className={style.navItem}>
-              <a className={style.navLink} href="x">
+              <a className={`${style.navLink} text-white `} href="x">
                 Références
               </a>
             </li>
             <li className={`${style.navItem}`}>
-              <a className={style.navLink} href="x">
+              <a className={`${style.navLink} text-white `} href="x">
                 Partenaires
               </a>
             </li>
             <li className={`${style.navItem}`}>
-              <a className={style.navLink} href="x">
+              <a className={`${style.navLink} text-white `} href="x">
                 Événements
               </a>
             </li>
             <li className={`${style.navItem}`}>
-              <a className={style.navLink} href="x">
+              <a className={`${style.navLink} text-white `} href="x">
                 Contacts
               </a>
             </li>
