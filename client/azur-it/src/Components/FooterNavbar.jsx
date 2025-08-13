@@ -56,7 +56,7 @@ const FooterNavbar = () => {
           </div>
         </nav>
         <div
-          className={`${style.icons} text-white d-flex justify-content-center align-items-center column-gap-3`}
+          className={`${style.icons} text-white d-flex justify-content-center align-items-center column-gap-3 `}
         >
           <div className={`${style.instagram}`}>
             <i class="fa-brands fa-square-instagram"></i>

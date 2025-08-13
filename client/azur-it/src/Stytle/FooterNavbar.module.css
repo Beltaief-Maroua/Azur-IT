@@ -34,3 +34,8 @@
     height: 1px;
     background-color: #fff;
 }
+.icons
+{
+    position: relative;
+    margin-top: -13px;
+}

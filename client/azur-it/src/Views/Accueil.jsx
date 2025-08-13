@@ -17,7 +17,7 @@ import client9 from '../assets/client9.png';
 const Accueil = () => {
   return (
     <div className={`${style.container} p-4`}>
-      <MyNavbar />
+      <MyNavbar bgc="navbarLight"/>
       <header className={`${style.header} d-flex flex-column align-items-center mt-lg-5 row-gap-3`}>
         <span className={`${style.headerTitle} text-white fs-3`}>Make things better</span>
         <span className={`${style.headerText} text-white fs-3`}>IT NEXT GENERATION</span>

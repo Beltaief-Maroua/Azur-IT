@@ -1,0 +1,8 @@
+#navbarDark
+{
+    background-color: var(--darkPurple);
+}
+#navbarLight
+{
+    background-color: transparent;
+}

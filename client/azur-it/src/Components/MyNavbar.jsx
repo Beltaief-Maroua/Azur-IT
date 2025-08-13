@@ -1,10 +1,11 @@
 import React from "react";
 import Logo from "../assets/simpleLogo.png";
 import style from "../Stytle/MyNavbar.module.css";
+import '../Stytle/MyNavbar.css'
 
-const MyNavbar = () => {
+const MyNavbar = (props) => {
   return (
-    <div className={style.container}>
+    <div className={style.container} id={props.bgc}>
       <nav className={`${style.navbar} ${style.navbarLight} ${style.bgLight}`}>
         <a className={style.navbarBrand} href="x">
           <img
@@ -56,11 +57,11 @@ const MyNavbar = () => {
                 Partenaires
               </a>
             </li>
-            <li className={`${style.navItem}`}>
+            {/* <li className={`${style.navItem}`}>
               <a className={`${style.navLink} text-white `} href="x">
                 Événements
               </a>
-            </li>
+            </li> */}
             <li className={`${style.navItem}`}>
               <a className={`${style.navLink} text-white `} href="x">
                 Contacts
