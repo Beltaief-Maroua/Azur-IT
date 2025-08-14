@@ -1,7 +1,7 @@
 .container
 {
     display: flex;
-    width: 99%;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     

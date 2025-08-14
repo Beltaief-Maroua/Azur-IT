@@ -6,18 +6,20 @@ import Accueil from './Views/Accueil';
 import Mission from './Components/Mission';
 import Partner from './Components/Partner';
 import FooterNavbar from './Components/FooterNavbar';
-import Service from './Components/Service';
+import Service from './Views/Service';
+import Contact from './Views/Contact'
 import Test from './Components/test'; 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Accueil />
-    <Mission />
-    <Partner />
-    <FooterNavbar />
+    {/* <Accueil /> */}
+    {/* <Mission /> */}
+    {/* <Partner /> */}
+    {/* <FooterNavbar /> */}
     {/* <Service /> */}
+    <Contact />
     {/* <Test/> */}
   </React.StrictMode>
 );
