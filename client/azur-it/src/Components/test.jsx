@@ -5,55 +5,52 @@ import style from '../Stytle/Test.module.css'
 
 const Service=()=> {
   return (
-  <div className={style.container}>
-        <form className={style.formulaire}>
-          <div className={style.formGroup}>
-            <label htmlFor="name" className={style.formLabel}>
-              Nom
-            </label>
-            <input
-              type="text"
-              className={style.formControl}
-              id="name"
-              required
-            />
+  <div>
+      <div
+        id="carouselExampleIndicators"
+        className={`${style.carousel} slide`}
+        data-ride="carousel"
+      >
+        <ol className={style.carouselIndicators}>
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            className={style.active}
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div className={style.carouselInner}>
+          <div className={`${style.carouselItem} ${style.active}`}>
+            <img className={style.carouselImg} src="..." alt="First slide" />
           </div>
-          <div className={style.formGroup}>
-            <label htmlFor="email" className={style.formLabel}>
-              Email
-            </label>
-            <input
-              type="email"
-              className={style.formControl}
-              id="email"
-              required
-            />
+          <div className={style.carouselItem}>
+            <img className={style.carouselImg} src="..." alt="Second slide" />
           </div>
-          <div className={style.formGroup}>
-            <label htmlFor="subject" className={style.formLabel}>
-              Sujet
-            </label>
-            <input type="text" className={style.formControl} id="subject" />
+          <div className={style.carouselItem}>
+            <img className={style.carouselImg} src="..." alt="Third slide" />
           </div>
-          <div className={style.formGroup}>
-            <label htmlFor="message" className={style.formLabel}>
-              Message
-            </label>
-            <textarea
-              className={style.textarea}
-              id="message"
-              rows={8}
-              maxLength={3000}
-              required
-              placeholder="Votre message ici (max 3000 caractères)"
-            >
-            </textarea>
-          </div>
-          <button type="submit" className={style.button}>
-            Envoyer
-          </button>
-        </form>
-  </div>
+        </div>
+        <a
+          className={style.carouselControlPrev}
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span className={style.carouselControlPrevIcon} aria-hidden="true"></span>
+          <span className={style.srOnly}>Previous</span>
+        </a>
+        <a
+          className={style.carouselControlNext}
+          href="#carouselExampleIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span className={style.carouselControlNextIcon} aria-hidden="true"></span>
+          <span className={style.srOnly}>Next</span>
+        </a>
+      </div>
+    </div>
   )
 }
 

@@ -14,25 +14,20 @@
     .content
     {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
         border-radius: 10px;
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         height: 100%;
         width: 80%;
-        padding: 10px;
+        padding: 50px;
     }
-        .informations,.image,.form
+        .informations,.form
         {
-            width: 30%;
+            width: 40%;
+            margin-inline: 15px;
         }
-        .image
-        {
-            height: 100%;
-            display: flex;
-            align-items: center;
-        }
-            .informationsItem
+        
+            .informationsItemp
             {
                 display: flex;
                 flex-direction: column;
@@ -44,25 +39,22 @@
                     font-size: 1.5rem;
                     font-weight: 700;
                 }
-                    .adressDetails,.mailDetails,.phoneDetails
+                    .adressDetails,.mailDetails,.phoneDetails,.faxDetails
                     {
                         display: flex;
                         align-items: baseline;
                     }
-                        .adress,.mail,.phone
+                        .adressText,.mailText,.phoneText,.faxText
                         {
-                            margin-left: 5px;
-                            font-size: 1rem;
-                            font-weight: 600;
-
-                        }
-                        .adressText,.mailText,.phoneText
-                        {
-                            font-size: 1rem;
+                            font-size: 0.9rem;
                             font-weight: 400;
                             color: #6e6e6e;
                             margin-left: 10px;
                             margin-bottom: 30px;
+                        }
+                        .icon
+                        {
+                            color: #6e6e6e;
                         }
                         .mailText,.phoneText
                         {
@@ -105,17 +97,15 @@
                 outline: none;
                 border: 0.1px solid var(--darkPurple);
             }
-                span
+                .formLabel span
                 {
                     color: red;
                 }
-            .buttonContainer
-            {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 100%;
-            }
+                .buttonContainer
+                {
+                    padding: 15px;
+                }
+
                 .button
                 {
                     width: 100px;
@@ -127,6 +117,7 @@
                     cursor: pointer;
                     font-weight: 600;
                     padding: 15px;
+                    padding-block: 20px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
