@@ -3,6 +3,7 @@ import style from "../Stytle/Contact.module.css";
 import contact from "../assets/contact.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MyNavbar from "../Components/MyNavbar";
+import FooterNavbar from "../Components/FooterNavbar";
 
 const Contact = () => {
   return (
@@ -110,6 +111,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      <FooterNavbar />
     </div>
   );
 };
