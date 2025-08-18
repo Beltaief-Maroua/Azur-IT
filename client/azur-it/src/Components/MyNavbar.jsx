@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/simpleLogo.png";
+import Logo from "../assets/logos/simpleLogo.png";
 import style from "../Stytle/MyNavbar.module.css";
 import '../Stytle/MyNavbar.css'
 

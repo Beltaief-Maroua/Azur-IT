@@ -2,11 +2,11 @@ import React from 'react'
 import style from '../Stytle/Service.module.css'
 import MyNavbar from '../Components/MyNavbar';
 import FooterNavbar from '../Components/FooterNavbar';
-import integrator from '../assets/integrator.png'
-import process from '../assets/process.png'
-import storage from '../assets/storage.png'
-import application from '../assets/application.png'
-import security from '../assets/security.png'
+import integrator from '../assets/services/integrator.png'
+import process from '../assets/services/process.png'
+import storage from '../assets/services/storage.png'
+import application from '../assets/services/application.png'
+import security from '../assets/services/security.png'
 
 const serviceData = [
   {

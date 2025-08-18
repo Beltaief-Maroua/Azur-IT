@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../Stytle/Partner.module.css";
-import vectorImage from "../assets/partner.png";
+import vectorImage from "../assets/partnerIcon.png";
 
 const Partner = () => {
   return (

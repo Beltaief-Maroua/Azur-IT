@@ -2,15 +2,15 @@ import React from 'react'
 import style from "../Stytle/Accueil.module.css"
 import MyNavbar from '../Components/MyNavbar';
 
-import client1 from '../assets/client1.png';
-import client2 from '../assets/client2.jpg';
-import client3 from '../assets/client3.jpg';
-import client4 from '../assets/client4.png';
-import client5 from '../assets/client5.jpg';
-import client6 from '../assets/client6.png';
-import client7 from '../assets/client7.png';
-import client8 from '../assets/client8.png';
-import client9 from '../assets/client9.png';
+import client1 from '../assets/clients/client1.png';
+import client2 from '../assets/clients/client2.jpg';
+import client3 from '../assets/clients/client3.jpg';
+import client4 from '../assets/clients/client4.png';
+import client5 from '../assets/clients/client5.jpg';
+import client6 from '../assets/clients/client6.png';
+import client7 from '../assets/clients/client7.png';
+import client8 from '../assets/clients/client8.png';
+import client9 from '../assets/clients/client9.png';
 
 
 

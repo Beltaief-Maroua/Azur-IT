@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../Stytle/FooterNavbar.module.css";
-import Logo from "../assets/simpleLogo.png";
+import Logo from "../assets/logos/simpleLogo.png";
 
 const FooterNavbar = () => {
   return (

@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import reportWebVitals from './reportWebVitals';
-import '@fortawesome/fontawesome-free/css/all.min.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import './index.css';
 import Accueil from './Views/Accueil';
 import Mission from './Components/Mission';
@@ -10,6 +11,7 @@ import FooterNavbar from './Components/FooterNavbar';
 import Service from './Views/Service';
 import Contact from './Views/Contact'
 import Reference from './Views/Reference';
+import Partenaire from './Views/Partenaire';
 import Test from './Components/test'; 
 
 
@@ -21,8 +23,9 @@ root.render(
     {/* <Partner /> */}
     {/* <FooterNavbar /> */}
     {/* <Service /> */}
-    <Contact />
+    {/* <Contact /> */}
     {/* <Reference /> */}
+    {/* <Partenaire /> */}
     {/* <Test/> */}
   </React.StrictMode>
 );
