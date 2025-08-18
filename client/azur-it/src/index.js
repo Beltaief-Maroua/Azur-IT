@@ -23,7 +23,7 @@ root.render(
     {/* <Partner /> */}
     {/* <FooterNavbar /> */}
     {/* <Service /> */}
-    {/* <Contact /> */}
+    <Contact />
     {/* <Reference /> */}
     {/* <Partenaire /> */}
     {/* <Test/> */}
