@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './index.css';
 import Accueil from './Views/Accueil';
 
-import FooterNavbar from './Components/FooterNavbar';
 import Service from './Views/Service';
 import Contact from './Views/Contact'
 import Reference from './Views/Reference';
@@ -17,11 +17,14 @@ import Test from './Components/test';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <BrowserRouter>
+    
+    </BrowserRouter>
     {/* <Accueil /> */}
     {/* <Service /> */}
     {/* <Reference /> */}
-    <Partenaire />
-    {/* <Contact /> */}
+    {/* <Partenaire /> */}
+    <Contact />
      {/* <FooterNavbar /> */}
     {/* <Test/> */}
   </React.StrictMode>

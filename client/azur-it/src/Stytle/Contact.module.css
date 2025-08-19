@@ -24,15 +24,18 @@
         .informations,.form
         {
             width: 40%;
-            margin-inline: 15px;
+            margin-inline: 20px;
+            height: 100vh;
         }
         
-            .informationsItemp
+            .informationsItem
             {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
+                justify-content: start;
+                height: 100vh;
+                row-gap: 30px;
             }
                 .informationsTitle
                 {
@@ -58,14 +61,13 @@
                         }
                         .mailText,.phoneText
                         {
-                            line-height:0.8 ;
+                            line-height:2;
                         }
                     .image img
                     {
                         width: 100%;
                         height: 300px;
                         border-radius: 3px;
-                        /* border: 1px solid red; */
                     }
             .formulaire
             {

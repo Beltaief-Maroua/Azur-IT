@@ -21,7 +21,7 @@ const Contact = () => {
                     <i class="fa-solid fa-location-dot"></i>
                   </div>
                   <div className={style.adressText}>
-                    <p>72 Avenue Maouia Ibn Abi Sofiene El Menzah 7 2091</p>
+                    <p> Avenue 18 Janvier, C408, Ariana Centre, 2080 Ariana Ville</p>
                   </div>
                 </div>
                 <div className={style.mailDetails}>
@@ -29,7 +29,6 @@ const Contact = () => {
                     <i class="fa-solid fa-envelope"></i>
                   </div>
                   <div className={style.mailText}>
-                    <p>contact@it-azur.com</p>
                     <p>commercial@it-azur.com</p>
                   </div>
                 </div>
@@ -38,15 +37,7 @@ const Contact = () => {
                     <i class="fa-solid fa-mobile-screen"></i>
                   </div>
                   <div className={style.phoneText}>
-                    <p>Mobile: +216 92 172 290</p>
-                  </div>
-                </div>
-                <div className={style.faxDetails}>
-                  <div className={style.icon}>
-                    <i class="fa-solid fa-fax"></i>
-                  </div>
-                  <div className={style.faxText}>
-                    <p>Fax : +216 70 740 967</p>
+                    <p>Mobile: +216 52 29 29 19</p>
                   </div>
                 </div>
               </div>
