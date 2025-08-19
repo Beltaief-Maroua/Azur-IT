@@ -1,11 +1,7 @@
 .container
 {
-    background: linear-gradient(
-        90deg,
-        #EBEFFE 0%,
-        #F4FDFE 50%,
-        #F5FEFF 100%
-    );
+    background-color: #F2FCFE !important;
+    width:100%;
 }
     .mainTitle
     {
@@ -38,7 +34,6 @@
             font-size: 10px;
             width: 15%;
             height: 4rem;
-            /* background-color: #E4FAFF; */
             background-image: linear-gradient(to bottom, #aea5eb, #F4FDFE);
             border-radius: 5px;
             margin-bottom: 20px;

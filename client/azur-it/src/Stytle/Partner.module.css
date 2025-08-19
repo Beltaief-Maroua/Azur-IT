@@ -1,11 +1,6 @@
 .container
 {
-    background: linear-gradient(
-        90deg,
-        #EBEFFE 0%,
-        #F4FDFE 50%,
-        #F0FBFE 100%
-    );
+    background-color: #F2FCFE !important;
     padding-bottom: 20px;
 }
     .partner

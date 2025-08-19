@@ -5,8 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './index.css';
 import Accueil from './Views/Accueil';
-import Mission from './Components/Mission';
-import Partner from './Components/Partner';
+
 import FooterNavbar from './Components/FooterNavbar';
 import Service from './Views/Service';
 import Contact from './Views/Contact'
@@ -19,8 +18,6 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Accueil />
-    <Mission />
-    <Partner />
     {/* <FooterNavbar /> */}
     {/* <Service /> */}
     {/* <Contact /> */}
