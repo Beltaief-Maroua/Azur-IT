@@ -1,18 +1,22 @@
 import React from "react";
 import Logo from "../assets/logos/simpleLogo.png";
 import style from "../Stytle/MyNavbar.module.css";
+import { Link } from 'react-router-dom';
+
 import '../Stytle/MyNavbar.css'
 
 const MyNavbar = (props) => {
   return (
     <div className={style.container} id={props.bgc}>
+      <nav>
+      </nav>
       <nav className={`${style.navbar} ${style.navbarLight} ${style.bgLight}`}>
-        <a className={style.navbarBrand} href="x">
+        <Link to="/accueil" className={style.navbarBrand} >
           <img
             src={Logo}
             alt=""
           />
-        </a>
+        </Link>
       </nav>
 
       <nav
@@ -38,34 +42,34 @@ const MyNavbar = (props) => {
         >
           <ul className={`${style.navbarNav} d-flex justify-content-around align-items-center `}>
             <li className={`${style.navItem} ${style.active} `}>
-              <a className={`${style.navLink} text-white `} href="x">
+              <Link to="/accueil" className={`${style.navLink} text-white `} >
                 Accueil <span className={style.srOnly}></span>
-              </a>
+              </Link>
             </li>
             <li className={style.navItem}>
-              <a className={`${style.navLink} text-white `} href="x">
+              <Link to="/service" className={`${style.navLink} text-white `} >
                 Services
-              </a>
+              </Link>
             </li>
             <li className={style.navItem}>
-              <a className={`${style.navLink} text-white `} href="x">
+              <Link to="/reference" className={`${style.navLink} text-white `} >
                 Références
-              </a>
+              </Link>
             </li>
             <li className={`${style.navItem}`}>
-              <a className={`${style.navLink} text-white `} href="x">
+              <Link to="/partenaire" className={`${style.navLink} text-white `} >
                 Partenaires
-              </a>
+              </Link>
             </li>
             {/* <li className={`${style.navItem}`}>
-              <a className={`${style.navLink} text-white `} href="x">
+              <a className={`${style.navLink} text-white `} >
                 Événements
               </a>
             </li> */}
             <li className={`${style.navItem}`}>
-              <a className={`${style.navLink} text-white `} href="x">
+              <Link to="/contact" className={`${style.navLink} text-white `} >
                 Contacts
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -77,7 +81,7 @@ const MyNavbar = (props) => {
 export default MyNavbar;
 
 /* <div className={style.logo}>
-        <a href="x">
+        <a >
           <img src={Logo} alt="Logo" width="70" height="70" />
         </a>
       </div>
