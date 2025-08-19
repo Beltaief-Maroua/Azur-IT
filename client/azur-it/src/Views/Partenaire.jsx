@@ -3,7 +3,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "../Stytle/Partenaire.module.css";
-import MyNavbar from "../Components/MyNavbar"
+import MyNavbar from "../Components/MyNavbar";
+import FooterNavbar from '../Components/FooterNavbar';
+
 
 
 import dell from "../assets/partenaires/dell.png";
@@ -54,6 +56,7 @@ const Partenaire = () => (
       </Slider>
     </div>
   </div>
+  <FooterNavbar />
   </>
 );
 

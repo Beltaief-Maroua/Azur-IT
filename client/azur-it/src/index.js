@@ -19,8 +19,8 @@ root.render(
   <React.StrictMode>
     {/* <Accueil /> */}
     {/* <Service /> */}
-    <Reference />
-    {/* <Partenaire /> */}
+    {/* <Reference /> */}
+    <Partenaire />
     {/* <Contact /> */}
      {/* <FooterNavbar /> */}
     {/* <Test/> */}
