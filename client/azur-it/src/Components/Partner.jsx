@@ -9,15 +9,13 @@ const Partner = () => {
         className={`${style.partner} d-flex justify-content-around align-items-center `}
       >
         <div className={style.vector}>
-          <img
+          {/* <img
             className={`${style.vectorImage} col-6`}
             src={vectorImage}
             alt="vector"
-          />
+          /> */}
         </div>
-        <div
-          className={`${style.description} d-flex flex-column justify-content-center align-items-center `}
-        >
+        <div className={`${style.description} d-flex flex-column justify-content-center align-items-center `}>
           <div className={style.descriptionTitle}>
             <p> Nos Partenaires </p>
           </div>

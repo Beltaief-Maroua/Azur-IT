@@ -18,12 +18,12 @@ import Test from './Components/test';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Accueil /> */}
-    {/* <Mission /> */}
-    {/* <Partner /> */}
+    <Accueil />
+    <Mission />
+    <Partner />
     {/* <FooterNavbar /> */}
     {/* <Service /> */}
-    <Contact />
+    {/* <Contact /> */}
     {/* <Reference /> */}
     {/* <Partenaire /> */}
     {/* <Test/> */}
