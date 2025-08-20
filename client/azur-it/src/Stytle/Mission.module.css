@@ -1,4 +1,149 @@
-.container
+.container {
+  background-color: #F2FCFE !important;
+  width: 100%;
+}
+
+/* ----- TITRE ----- */
+.mainTitle {
+  color: var(--darkGrey);
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* ----- MISSIONS ----- */
+.missions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* important pour le responsive */
+}
+
+/* ----- CARD ----- */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cardColor);
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; 
+  padding: 20px;
+  margin: 20px;
+  width: 30%; /* valeur par défaut sur grands écrans */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.cardIconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-image: linear-gradient(to bottom, #aea5eb, #F4FDFE);
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.cardIcon {
+  font-size: 2rem;
+  color: #645C99; 
+}
+
+.cardTitle {
+  color: #726D94;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.cardText {
+  color: var(--lightGrey);
+  font-size: 15px;
+}
+
+.cardButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DFE3F8;
+  color: #726D94;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  height: 35px;
+}
+
+/* ----- RESPONSIVE BREAKPOINTS ----- */
+
+/* SM (≤ 767px) → 1 carte par ligne */
+@media (max-width: 767px) {
+  .card {
+    width: 70%;
+  }
+  .mainTitle {
+    font-size: 2rem;
+  }
+}
+
+/* MD (768px – 991px) → 2 cartes par ligne */
+@media (min-width: 768px) and (max-width: 991px) {
+  .card {
+    width: 45%;
+  }
+  .mainTitle {
+    font-size: 2.3rem;
+  }
+}
+
+/* LG (992px – 1199px) → 3 cartes équilibrées */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .card {
+    width: 30%;
+  }
+  .mainTitle {
+    font-size: 2.5rem;
+  }
+}
+
+/* XL (1200px – 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .card {
+    width: 28%;
+  }
+  .mainTitle {
+    font-size: 2.8rem;
+  }
+}
+
+/* XXL (≥ 1400px) */
+@media (min-width: 1400px) {
+  .card {
+    width: 25%;
+  }
+  .mainTitle {
+    font-size: 3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* .container
 {
     background-color: #F2FCFE !important;
     width:100%;
@@ -11,58 +156,67 @@
         text-align: center;
         padding: 1rem;
     }
-    .card
+    .missions
     {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--cardColor);
-        border-radius: 10px;
-        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; 
-        padding: 20px;
-        margin: 20px;
-        width: 33%;
-        text-align: center;
-
     }
-        .cardIconContainer
+        .card
         {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            font-size: 10px;
-            width: 15%;
-            height: 4rem;
-            background-image: linear-gradient(to bottom, #aea5eb, #F4FDFE);
-            border-radius: 5px;
-            margin-bottom: 20px;
+            background-color: var(--cardColor);
+            border-radius: 10px;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; 
+            padding: 20px;
+            margin: 20px;
+            width: 33%;
+            text-align: center;
+
         }
-            .cardIcon
+            .cardIconContainer
             {
-                font-size: 2rem;
-                color: #645C99; 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 10px;
+                width: 15%;
+                height: 4rem;
+                background-image: linear-gradient(to bottom, #aea5eb, #F4FDFE);
+                border-radius: 5px;
+                margin-bottom: 20px;
             }
-            .cardTitle
-            {
-                color: #726D94;
-                font-size: 25px;
-                font-weight: 600;
-            }
-            .cardText
-            {
-                color: var( --lightGrey);
-                font-size: 15px;
-            }
-            .cardButton
-            {
-                background-color: #DFE3F8;
-                color: #726D94;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 20px;
-                cursor: pointer;
-                font-size: 16px;
-                margin-top: 10px;
-                height: 35px;
-            }
+                .cardIcon
+                {
+                    font-size: 2rem;
+                    color: #645C99; 
+                }
+                .cardTitle
+                {
+                    color: #726D94;
+                    font-size: 25px;
+                    font-weight: 600;
+                }
+                .cardText
+                {
+                    color: var( --lightGrey);
+                    font-size: 15px;
+                }
+                .cardButton
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #DFE3F8;
+                    color: #726D94;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    height: 35px;
+                } */

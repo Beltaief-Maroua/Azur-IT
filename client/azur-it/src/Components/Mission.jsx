@@ -24,16 +24,16 @@ const Mission=()=> {
   return (
     <div className={style.container}>
       <p className={style.mainTitle}>Nos Missions</p>
-      <div className={`${style.missions} d-flex justify-content-center align-items-center`}>
+      <div className={`${style.missions}`}>
         {cardsData.map((card, idx) => (
           <div className={style.card} key={idx}>
-            <div className={`${style.cardIconContainer} d-flex justify-content-center align-items-center`}>
+            <div className={`${style.cardIconContainer}`}>
                 {card.icon}
             </div>
             
             <p className={style.cardTitle}>{card.title}</p>
             <p className={style.cardText}>{card.text}</p>
-            <button className={`${style.cardButton} d-flex justify-content-center align-items-center`}>En savoir plus</button>
+            <button className={`${style.cardButton}`}>En savoir plus</button>
           </div>
         ))}
       </div>

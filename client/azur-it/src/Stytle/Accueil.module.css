@@ -36,12 +36,17 @@
 .sections {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 15px;
-    width: 95%;
+    flex-direction: column;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
+}
+
+.missionSection
+{
+    margin-top: 33px;
+
 }
 
 .sections > div {
