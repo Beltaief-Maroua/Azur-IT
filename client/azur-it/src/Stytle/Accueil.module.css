@@ -1,4 +1,191 @@
-.container
+/* ===============================
+   Styles de base (avant 576px)
+   =============================== */
+.container {
+    background-image: linear-gradient(to bottom, #0B005D, #6D669F);
+    width: 100%;
+    height: 100vh;
+    font-family:"Montserrat", sans-serif !important;
+    font-weight: 600;
+}
+
+.mainText {
+    font-size: 10px;
+    width: 95%;
+    color: var(--lightGrey);
+}
+
+.experienceYears, .projectCount, .clientCount, .hourCount {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.experienceText, .projectText, .clientText, .hourText {
+    font-size: 9px;
+    color: var(--lightGrey);
+}
+
+.sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.sections > div {
+    flex: 1 1 120px;
+    text-align: center;
+}
+
+/* ===============================
+   SM ≥576px && ≤767px
+   =============================== */
+@media  (max-width: 767px) {
+    .mainText {
+        font-size: 11px;
+        width: 90%;
+    }
+    .experienceYears, .projectCount, .clientCount, .hourCount {
+        font-size: 18px;
+    }
+    .avatar {
+        /* width: 50px;
+        height: 50px;
+        margin-top: 20px; */
+        display: none;
+    }
+    .experienceText, .projectText, .clientText, .hourText {
+        font-size: 10px;
+    }
+    .sections > div {
+        flex: 1 1 150px;
+    }
+}
+
+/* ===============================
+   MD ≥768px && ≤991px
+   =============================== */
+@media (min-width: 768px) and (max-width: 991px) {
+    .mainText {
+        font-size: 12px;
+        width: 70%;
+    }
+    .experienceYears, .projectCount, .clientCount, .hourCount {
+        font-size: 20px;
+    }
+    .avatar {
+        width: 60px;
+        height: 60px;
+    }
+    .experienceText, .projectText, .clientText, .hourText {
+        font-size: 11px;
+    }
+    .sections > div {
+        flex: 1 1 180px;
+    }
+}
+
+/* ===============================
+   LG ≥992px && ≤1199px
+   =============================== */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .mainText {
+        font-size: 13px;
+        width: 50%;
+    }
+    .experienceYears, .projectCount, .clientCount, .hourCount {
+        font-size: 23px;
+    }
+    .avatar {
+        width: 65px;
+        height: 65px;
+        margin-top: 40px;
+        margin-left: -10px;
+    }
+    .experienceText, .projectText, .clientText, .hourText {
+        font-size: 12px;
+    }
+    .sections > div {
+        flex: 1 1 200px;
+    }
+}
+
+/* ===============================
+   XL ≥1200px && ≤1399px
+   =============================== */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .mainText {
+        font-size: 13px;
+        width: 40%;
+    }
+    .experienceYears, .projectCount, .clientCount, .hourCount {
+        font-size: 25px;
+    }
+    .avatar {
+        width: 70px;
+        height: 70px;
+        margin-top: 40px;
+        margin-left: -10px;
+    }
+    .experienceText, .projectText, .clientText, .hourText {
+        font-size: 12px;
+    }
+    .sections > div {
+        flex: 1 1 220px;
+    }
+}
+
+/* ===============================
+   XXL ≥1400px
+   =============================== */
+@media (min-width: 1400px) {
+    .mainText {
+        font-size: 14px;
+        width: 45%;
+    }
+    .experienceYears, .projectCount, .clientCount, .hourCount {
+        font-size: 28px;
+    }
+    .avatar {
+        width: 75px;
+        height: 75px;
+         margin-top: 40px;
+        margin-left: -10px;
+    }
+    .experienceText, .projectText, .clientText, .hourText {
+        font-size: 13px;
+    }
+    .sections > div {
+        flex: 1 1 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container
 {
     background-image: linear-gradient(to bottom, #0B005D, #6D669F);
     width: 100%;
@@ -36,9 +223,8 @@
       {
         display: flex;
         flex-direction: column;
-        /* row-gap: 20px; */
         margin-top: 20px;
         width: 98.8vw;
         margin-left: -24px;
       }
-      
+       */

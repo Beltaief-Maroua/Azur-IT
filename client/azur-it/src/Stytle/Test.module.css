@@ -1,52 +1,24 @@
-.container {
-  width: 100vw;
-  height: 80vh; /* occupe toute la hauteur de l’écran */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* centre verticalement */
-  align-items: center;     /* centre horizontalement */
-  padding: 40px 0;
+/* 📱 Small devices (sm) ≥ 576px */
+@media (min-width: 576px) {
+  /* Styles pour petits écrans / mobiles en mode paysage */
 }
 
-h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  font-weight: 700;
-  margin-bottom: 60px;
-  background: linear-gradient(90deg, #362f6df6, #5349a0);
-  -webkit-background-clip: text;
-  background-clip: none;
-  -webkit-text-fill-color: transparent;
+/* 📱➡️💻 Medium devices (md) ≥ 768px */
+@media (min-width: 768px) {
+  /* Styles pour tablettes */
 }
 
-
-.sliderContainer {
-  width: 80%;
+/* 💻 Large devices (lg) ≥ 992px */
+@media (min-width: 992px) {
+  /* Styles pour ordinateurs portables */
 }
 
-/* Slide container */
-.slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  padding: 10px;
+/* 🖥️ Extra large devices (xl) ≥ 1200px */
+@media (min-width: 1200px) {
+  /* Styles pour desktops larges */
 }
 
-/* Images */
-.slide img {
-  width: 100%;
-  width: 180px; 
-  height: 200px;
-  object-fit: contain;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  display: block;
-}
-
-/* Hover effect */
-.slide img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+/* 🖥️➡️📺 Extra extra large devices (xxl) ≥ 1400px */
+@media (min-width: 1400px) {
+  /* Styles pour très grands écrans */
 }

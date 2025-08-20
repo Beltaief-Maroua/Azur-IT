@@ -16,6 +16,7 @@ const MyNavbar = (props) => {
             src={Logo}
             alt="logo"
           />
+
         </Link>
       </nav>
 
