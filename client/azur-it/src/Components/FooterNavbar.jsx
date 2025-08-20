@@ -1,6 +1,7 @@
 import React from "react";
 import style from "../Stytle/FooterNavbar.module.css";
 import Logo from "../assets/logos/simpleLogo.png";
+import { Link } from "react-router-dom";
 
 const FooterNavbar = () => {
   return (
@@ -13,9 +14,9 @@ const FooterNavbar = () => {
         <nav
           className={`${style.navbar} ${style.navbarLight} ${style.bgLight}`}
         >
-          <a className={style.navbarBrand} href="x">
+          <Link to="/accueil" className={style.navbarBrand}>
             <img src={Logo} alt="" />
-          </a>
+          </Link>
         </nav>
         <nav
           className={`${style.navbar} ${style.navbarLight} ${style.bgLight} navbar-expand-lg`}
@@ -28,29 +29,35 @@ const FooterNavbar = () => {
               className={`${style.navbarNav} d-flex justify-content-around align-items-center `}
             >
               <li className={`${style.navItem} ${style.active} `}>
-                <a className={`${style.navLink} text-white `} href="x">
+                <Link to="/accueil" className={`${style.navLink} text-white `}>
                   Accueil <span className={style.srOnly}></span>
-                </a>
+                </Link>
               </li>
               <li className={style.navItem}>
-                <a className={`${style.navLink} text-white `} href="x">
+                <Link to="/service" className={`${style.navLink} text-white `}>
                   Services
-                </a>
+                </Link>
               </li>
               <li className={style.navItem}>
-                <a className={`${style.navLink} text-white `} href="x">
+                <Link
+                  to="/reference"
+                  className={`${style.navLink} text-white `}
+                >
                   Références
-                </a>
+                </Link>
               </li>
               <li className={`${style.navItem}`}>
-                <a className={`${style.navLink} text-white `} href="x">
+                <Link
+                  to="/partenaire"
+                  className={`${style.navLink} text-white `}
+                >
                   Partenaires
-                </a>
+                </Link>
               </li>
               <li className={`${style.navItem}`}>
-                <a className={`${style.navLink} text-white `} href="x">
+                <Link to="/contact" className={`${style.navLink} text-white `}>
                   Contacts
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -59,13 +66,13 @@ const FooterNavbar = () => {
           className={`${style.icons} text-white d-flex justify-content-center align-items-center column-gap-3 `}
         >
           <div className={`${style.instagram}`}>
-            <i class="fa-brands fa-square-instagram"></i>
+            <i className="fa-brands fa-square-instagram"></i>
           </div>
           <div className={`${style.facebook}`}>
-            <i class="fa-brands fa-facebook"></i>
+            <i className="fa-brands fa-facebook"></i>
           </div>
           <div className={`${style.instagram}`}>
-            <i class="fa-brands fa-linkedin"></i>
+            <i className="fa-brands fa-linkedin"></i>
           </div>
         </div>
       </div>

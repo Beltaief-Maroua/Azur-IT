@@ -19,6 +19,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<Accueil />} />
         <Route path="/accueil" element={<Accueil />} />
         <Route path="/service" element={<Service />} />
         <Route path="/reference" element={<Reference />} />

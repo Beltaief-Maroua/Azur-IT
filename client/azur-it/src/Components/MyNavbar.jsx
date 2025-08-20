@@ -14,7 +14,7 @@ const MyNavbar = (props) => {
         <Link to="/accueil" className={style.navbarBrand} >
           <img
             src={Logo}
-            alt=""
+            alt="logo"
           />
         </Link>
       </nav>
