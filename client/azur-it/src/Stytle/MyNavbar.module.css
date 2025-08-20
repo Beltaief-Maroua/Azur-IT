@@ -1,4 +1,134 @@
-.container
+/* ===============================
+   Styles de base (≥768px)
+   =============================== */
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 12px 20px;
+}
+
+.navbarBrand img {
+    width: 150px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.navbarNav {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+}
+
+.navItem {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.navLink {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.navLink:hover {
+    color: #FFD700;
+}
+
+/* Navbar Toggler */
+.navbarToggler {
+    display: none; /* caché par défaut */
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Collapse menu par défaut */
+.collapse {
+    display: flex;
+    justify-content: flex-end;
+    width: auto;
+}
+
+/* ===============================
+   Mobile <767px
+   =============================== */
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column; /* logo au-dessus du menu */
+        align-items: flex-start;
+    }
+    .navbar
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        width: 100%;
+    }
+
+    /* Logo */
+    .navbarBrand {
+        margin-bottom: 5px;
+    }
+
+    /* Toggler sous le logo */
+    .navbarToggler {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Menu vertical avec slide + fade */
+    .navbarNav {
+        max-height: 0;
+        opacity: 0;
+        overflow: hidden;
+        flex-direction: column;
+        width: 100%;
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    }
+
+    .navbarNav.show {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    .navbarNav {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navItem {
+        margin: 10px 0;
+        width: 100%;
+    }
+
+    .navLink {
+        width: 100%;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+    .navLink:hover {
+        padding-left: 20px; /* effet accordion */
+    }
+
+    /* Logo réduit */
+    .navbarBrand img {
+        width: 120px;
+        height: 55px;
+    }
+}
+
+
+
+
+/* .container
 {
     display: flex;
     width: 100%;
@@ -27,4 +157,4 @@
 {
      text-decoration: none;
      color: black;
-}
+} */
