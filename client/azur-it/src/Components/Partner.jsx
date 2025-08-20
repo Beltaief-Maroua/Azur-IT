@@ -1,21 +1,18 @@
 import React from "react";
 import style from "../Stytle/Partner.module.css";
+import { Link } from 'react-router-dom';
+
 import vectorImage from "../assets/partnerIcon.png";
 
 const Partner = () => {
   return (
     <div className={`${style.container}`}>
       <main
-        className={`${style.partner} d-flex justify-content-around align-items-center `}
+        className={`${style.partner}`}
       >
         <div className={style.vector}>
-          {/* <img
-            className={`${style.vectorImage} col-6`}
-            src={vectorImage}
-            alt="vector"
-          /> */}
         </div>
-        <div className={`${style.description} d-flex flex-column justify-content-center align-items-center `}>
+        <div className={`${style.description} `}>
           <div className={style.descriptionTitle}>
             <p> Nos Partenaires </p>
           </div>
@@ -28,12 +25,12 @@ const Partner = () => {
             </p>
           </div>
           <div
-            className={`${style.descriptionButton} d-flex justify-content-center align-items-center `}
+            className={`${style.descriptionButton}`}
           >
             <button
-              className={`${style.button} d-flex justify-content-center align-items-center `}
+              className={`${style.button}`}
             >
-              En savoir plus
+              <Link to="/partenaire" className={`${style.link}`}> En savoir plus </Link>
             </button>
           </div>
         </div>

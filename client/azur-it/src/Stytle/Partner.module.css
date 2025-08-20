@@ -1,4 +1,183 @@
-.container
+.container {
+  background-color: #F2FCFE !important;
+  padding-bottom: 20px;
+}
+
+/* ----- PARTNER (Layout principal) ----- */
+.partner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  gap: 30px; /* espace entre image et texte */
+}
+
+/* ----- IMAGE ----- */
+.vector {
+  width: 40%;
+  height: 80vh;
+  background-image: url("../assets/partnerIcon.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+}
+
+/* ----- DESCRIPTION ----- */
+.description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.descriptionTitle {
+  color: var(--darkGrey);
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  padding: 1rem;
+}
+
+.descriptionText {
+  color: var(--grey);
+  width: 70%;
+  text-align: center;
+}
+
+.descriptionButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DFE3F8;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  height: 35px;
+}
+
+.link {
+  text-decoration: none;
+  color: #726D94;
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+/* 📱 Small (max 767px) */
+@media (max-width: 767px) {
+  .partner {
+    flex-direction: column;
+  }
+
+  .vector {
+    width: 70%;
+    height: 40vh;
+    border-radius: 20px;
+  }
+
+  .description {
+    width: 70%;
+  }
+
+  .descriptionTitle {
+    font-size: 22px;
+  }
+
+  .descriptionText {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+
+/* 📲 Medium (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .vector {
+    width: 40%;
+    height: 50vh;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  .descriptionTitle {
+    font-size: 26px;
+  }
+}
+
+/* 💻 Large (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .vector {
+    width: 40%;
+    height: 60vh;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  .descriptionTitle {
+    font-size: 30px;
+  }
+}
+
+/* 🖥️ Extra Large (1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .vector {
+    width: 40%;
+    height: 70vh;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  .descriptionTitle {
+    font-size: 33px;
+  }
+}
+
+/* 🖥️💎 Extra Extra Large (≥1400px) */
+@media (min-width: 1400px) {
+  .vector {
+    width: 40%;
+    height: 80vh;
+  }
+
+  .description {
+    width: 50%;
+  }
+
+  .descriptionTitle {
+    font-size: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .container
 {
     background-color: #F2FCFE !important;
     padding-bottom: 20px;
@@ -19,12 +198,14 @@
             background-image: url("../assets/partnerIcon.png");
             background-size: cover;
             border-radius: 40px;
-            /* border: 3px solid red; */
         }
         .description
         {
             width: 50%;
-            /* border: 3px solid green; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
 
         }
             .descriptionTitle
@@ -40,15 +221,28 @@
                 color: var( --grey);
                 width: 70%;
             }
-            .button
+            .descriptionButton
             {
-                background-color: #DFE3F8;
-                color: #726D94;
-                padding: 10px 20px;
-                border: none;
-                border-radius: 20px;
-                cursor: pointer;
-                font-size: 16px;
-                margin-top: 10px;
-                height: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
+                .button
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #DFE3F8;
+                    padding: 10px 20px;
+                    border: none;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    font-size: 16px;
+                    margin-top: 10px;
+                    height: 35px;
+                }
+                    .link
+                    {
+                        text-decoration: none;
+                        color: #726D94;
+                    } */
