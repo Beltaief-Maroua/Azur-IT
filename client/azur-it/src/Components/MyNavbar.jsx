@@ -11,13 +11,9 @@ const MyNavbar = (props) => {
   return (
     <div className={style.container} id={props.bgc}>
       <nav className={`${style.navbar} ${style.navbarLight} ${style.bgLight}`}>
-
-        {/* Logo */}
         <Link to="/accueil" className={style.navbarBrand}>
           <img src={Logo} alt="logo" />
         </Link>
-
-        {/* Bouton toggler visible uniquement sur mobile */}
         <button
           className={style.navbarToggler}
           id={props.bgc}

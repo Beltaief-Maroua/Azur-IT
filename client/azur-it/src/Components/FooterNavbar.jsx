@@ -15,27 +15,27 @@ const FooterNavbar = (props) => {
         <ul
           className={`${style.navbarNav} ${style.navbarCollapse}`}>
           <li className={`${style.navItem} ${style.active}`}>
-            <Link to="/accueil" className={`${style.navLink} text-white`}>
+            <Link to="/accueil" className={`${style.navLink} `}>
               Accueil
             </Link>
           </li>
           <li className={style.navItem}>
-            <Link to="/service" className={`${style.navLink} text-white`}>
+            <Link to="/service" className={`${style.navLink} `}>
               Services
             </Link>
           </li>
           <li className={style.navItem}>
-            <Link to="/reference" className={`${style.navLink} text-white`}>
+            <Link to="/reference" className={`${style.navLink} `}>
               Références
             </Link>
           </li>
           <li className={style.navItem}>
-            <Link to="/partenaire" className={`${style.navLink} text-white`}>
+            <Link to="/partenaire" className={`${style.navLink} `}>
               Partenaires
             </Link>
           </li>
           <li className={style.navItem}>
-            <Link to="/contact" className={`${style.navLink} text-white`}>
+            <Link to="/contact" className={`${style.navLink} `}>
               Contacts
             </Link>
           </li>
