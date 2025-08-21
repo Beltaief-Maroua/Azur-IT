@@ -28,14 +28,12 @@
 
 .navLink {
     text-decoration: none;
-    color: black;
+    color: #fff;
     font-size: 16px;
     transition: all 0.3s ease;
 }
 
-.navLink:hover {
-    color: #FFD700;
-}
+
 
 /* Navbar Toggler */
 .navbarToggler {
@@ -58,72 +56,68 @@
    Mobile <767px
    =============================== */
 @media (max-width: 767px) {
-    .container {
-        flex-direction: column; /* logo au-dessus du menu */
-        align-items: flex-start;
-    }
-    .navbar
-    {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        width: 100%;
-    }
+  .navbar {
+    width: 600%;
+    display: flex;
+    justify-content: space-between; /* logo à gauche, bouton à droite */
+    align-items: center;
+    /* border: 3px solid green; */
 
-    /* Logo */
-    .navbarBrand {
-        margin-bottom: 5px;
-    }
+  }
 
-    /* Toggler sous le logo */
-    .navbarToggler {
-        display: block;
-        margin-bottom: 5px;
-    }
+  /* Logo */
+  .navbarBrand img {
+    width: 120px;
+    height: 55px;
+  }
 
-    /* Menu vertical avec slide + fade */
-    .navbarNav {
-        max-height: 0;
-        opacity: 0;
-        overflow: hidden;
-        flex-direction: column;
-        width: 100%;
-        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-    }
+  /* Bouton hamburger */
+  .navbarToggler {
+    display: block;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
 
-    .navbarNav.show {
-        max-height: 500px;
-        opacity: 1;
-    }
+    /* Important pour garantir qu'il reste à droite */
+    margin: 0;
+    order: 2; /* force le bouton à la fin du flex container */
+  }
 
-    .navbarNav {
-        flex-direction: column;
-        width: 100%;
-        padding: 0;
-    }
+  /* Menu vertical avec slide + fade */
+  .navbarNav {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    flex-direction: column;
+    width: 100%;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
 
-    .navItem {
-        margin: 10px 0;
-        width: 100%;
-    }
+  .navbarNav.show {
+    max-height: 500px;
+    opacity: 1;
+  }
 
-    .navLink {
-        width: 100%;
-        text-align: left;
-        padding-left: 10px;
-        font-size: 14px;
-    }
+  .navItem {
+    margin: 10px 0;
+    width: 100%;
+  }
 
-    .navLink:hover {
-        padding-left: 20px; /* effet accordion */
-    }
+  .navLink {
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #fff;
+  }
 
-    /* Logo réduit */
-    .navbarBrand img {
-        width: 120px;
-        height: 55px;
-    }
+  .navLink:hover {
+    padding-left: 20px;
+  }
 }
+
 
 
 

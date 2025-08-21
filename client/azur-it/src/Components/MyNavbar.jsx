@@ -29,23 +29,21 @@ const MyNavbar = (props) => {
       </nav>
           <ul className={`${style.navbarNav} ${style.navbarCollapse} ${isOpen ? style.show : ""}`}>
             <li className={`${style.navItem} ${style.active}`}>
-              <Link to="/accueil" className={`${style.navLink} text-white`}>Accueil</Link>
+              <Link to="/accueil" className={`${style.navLink}`}>Accueil</Link>
             </li>
             <li className={style.navItem}>
-              <Link to="/service" className={`${style.navLink} text-white`}>Services</Link>
+              <Link to="/service" className={`${style.navLink}`}>Services</Link>
             </li>
             <li className={style.navItem}>
-              <Link to="/reference" className={`${style.navLink} text-white`}>Références</Link>
+              <Link to="/reference" className={`${style.navLink}`}>Références</Link>
             </li>
             <li className={style.navItem}>
-              <Link to="/partenaire" className={`${style.navLink} text-white`}>Partenaires</Link>
+              <Link to="/partenaire" className={`${style.navLink}`}>Partenaires</Link>
             </li>
             <li className={style.navItem}>
-              <Link to="/contact" className={`${style.navLink} text-white`}>Contacts</Link>
+              <Link to="/contact" className={`${style.navLink}`}>Contacts</Link>
             </li>
           </ul>
-        
-      
     </div>
   );
 };

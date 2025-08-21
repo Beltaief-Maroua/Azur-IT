@@ -1,41 +1,261 @@
-.container
-{
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: var(--darkPurple);
+  width: 100%;
+}
+.navbarElement {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 100%;
+  }
+
+.navbarBrand img {
+  width: 150px;
+  height: 70px;
+  border-radius: 10px;
+}
+
+.navbarNav {
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
+}
+
+.navItem {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.line {
+  width: 80%;
+  height: 1px;
+  background-color: #fff;
+}
+
+.copyright {
+  margin-top: 15px;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .footerContainer
+  {
+    max-height: 50px;
+    padding: 0px ;
+    display: block;
+    margin: 0;
+  }
+  .navbarBrand, .navbarNav, .line
+  {
+    display: none;
+  }
+  
+}
+
+
+
+
+/* 
+.container {
+    display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     background-color: var(--darkPurple);
+    width: 100%;
+    height: auto;
     padding: 30px;
     font-size: 13px;
-    
-}
-.navbarBrand img
-{
-    width: 25vw;
-    border-radius: 10px;
-    width: 100px;
-    height: 50px;
-}
-.navbarNav
-{
-    width: 60vw;
+    row-gap: 10px;
 }
 
-.navItem
-{
+
+.parentNavbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    position: relative;
+}
+
+
+.navbarBrand img {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+.navbarCollapse {
+    display: flex;
+}
+
+.navbarNav {
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navItem {
     list-style: none;
 }
-.navLink
-{
-     text-decoration: none;
+
+.navLink {
+    text-decoration: none;
+    color: #fff;
 }
-.line
-{
+
+.line {
     width: 80%;
     height: 1px;
     background-color: #fff;
 }
-.icons
-{
-    position: relative;
-    margin-top: -13px;
+
+.copyright {
+    margin-top: 15px;
+    color: #fff;
 }
+
+
+.navbarToggler {
+    display: none; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.togglerLine {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+
+@media (max-width: 767px) {
+  .parentNavbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+}
+.logoButon
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 700%;
+}
+ 
+  .navbarToggler {
+    display: flex;
+  }
+
+ 
+  .navbarCollapse {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    flex-direction: column;
+    width: 100%;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
+
+  
+  .showMenu {
+    max-height: 300px;
+    opacity: 1;
+  }
+
+  .navbarNav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    padding: 10px 0;
+  }
+} */
+
+/* .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--darkPurple);
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    font-size: 13px;
+    row-gap: 10px;
+}
+    .parentNavbar
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+        .navbarBrand img
+        {
+            width: 25vw;
+            border-radius: 10px;
+            width: 100px;
+            height: 50px;
+        }
+        .navbarNav
+        {
+            width: 60vw;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navItem
+        {
+            list-style: none;
+        }
+        .navLink
+        {
+            text-decoration: none;
+            color: #fff;
+        }
+        .line
+        {
+            width: 80%;
+            height: 1px;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .icons
+        {
+            position: relative;
+            margin-top: -13px;
+        }
+        .copyright
+        {
+            margin-top: 15px;
+            color: #fff;
+        } */

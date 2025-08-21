@@ -92,9 +92,9 @@ const Accueil = () => {
         <div className={style.partnerSection}>
           <Partner />
         </div>
-        <div className={style.footerNavbarSection}>
+        
           <FooterNavbar />
-        </div>
+      
       </div>
     </div>
   );
