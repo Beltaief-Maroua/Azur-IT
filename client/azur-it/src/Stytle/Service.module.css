@@ -1,4 +1,176 @@
-.container
+.container {
+  background: linear-gradient(
+    90deg,
+    #EBEFFE 0%,
+    #F4FDFE 50%,
+    #F0FBFE 100%
+  );
+  height: fit-content;
+}
+
+.navbar {
+  background-color: var(--darkPurple);
+}
+
+.service {  
+  display: flex;
+  justify-content: space-around;
+  align-items: center; 
+  width: 100%;
+  margin-bottom: 2rem;
+  height: 100%;
+}
+
+.serviceImage {
+  width: 40%;
+  height: 100%;
+}
+
+.serviceImage img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+              rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  margin-inline: 100px;
+}
+  
+.serviceContent {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.serviceTitle {
+  color: #726D94;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.serviceDescription {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.heading {
+  color: var(--darkGrey);
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 30px;
+}
+
+/* alternance gauche/droite */
+.service:nth-child(odd) .serviceContent {
+  order: 1;
+}
+.service:nth-child(odd) .serviceImage {
+  order: 2;
+}
+
+.service:nth-child(even) .serviceContent {
+  order: 2;
+}
+.service:nth-child(even) .serviceImage {
+  order: 1;
+}
+
+/* 📱 Mobile (≤767px) */
+@media (max-width: 767px) {
+  .service {
+    justify-content: space-between;
+    width: 100%;
+  }
+  .serviceImage
+  {
+    display: none;
+  }
+
+  .serviceContent {
+    width: 70%;
+    margin: 0;
+    margin-inline: 20px;
+  }
+}
+
+/* 📲 Tablette (768–991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .service {
+    justify-content: space-between;
+    width: 100%;
+    /* border: 2px solid red; */
+  }
+
+  .serviceImage img {
+    width: 200px;
+    height: 200px;
+    margin-inline: auto;
+  }
+  .serviceImage
+  {
+    /* border: 2px solid green; */
+    display: flex;
+  }
+
+  .serviceContent {
+    width: 70%;
+    margin-inline: 20px;
+  }
+}
+
+/* 💻 Petit desktop (992–1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .serviceImage {
+    width: 35%;
+  }
+
+  .serviceImage img {
+    width: 250px;
+    height: 250px;
+    margin-inline: 50px;
+  }
+
+  .serviceContent {
+    width: 55%;
+  }
+}
+
+/* 🖥️ Grand desktop (1200–1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .serviceImage img {
+    width: 280px;
+    height: 280px;
+    margin-inline: 80px;
+  }
+
+  .serviceContent {
+    width: 45%;
+  }
+}
+
+/* 🖥️💡 Très grand écran (≥1400px) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .serviceImage img {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+
+
+
+
+
+
+
+/* .container
 {
     background: linear-gradient(
         90deg,
@@ -51,7 +223,6 @@
     }
     .serviceDescription
     {
-        /* color: var(--lightGrey); */
         font-size: 15px;
         line-height: 1.5;
     }
@@ -77,4 +248,4 @@
 }
 .service:nth-child(even) .serviceImage {
   order: 1;
-}
+} */

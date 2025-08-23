@@ -109,8 +109,10 @@ const serviceData = [
 
 const Service=()=> {
   return (
+      <>
+      <MyNavbar bgc="navbarDark"/>
   <div className={style.container}>
-    <MyNavbar bgc="navbarDark"/>
+    
     <p className={style.heading}>Nos services</p>
     <div className={style.serviceList}>
       {serviceData.map((service, idx) => (
@@ -129,8 +131,15 @@ const Service=()=> {
         </div>
       ))}
     </div>
-    <FooterNavbar/>
+    <div>
+        <FooterNavbar/>
+      </div>
   </div>
+
+      
+    
+  
+  </>
   )
 }
 
