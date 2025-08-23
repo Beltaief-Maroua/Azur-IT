@@ -110,9 +110,10 @@ const serviceData = [
 const Service=()=> {
   return (
       <>
-      <MyNavbar bgc="navbarDark"/>
-  <div className={style.container}>
-    
+      <div className="row m-0 p-0">
+        <div className={`${style.container} container-fluid m-0 p-0`} >
+
+    <MyNavbar bgc="navbarDark"/>
     <p className={style.heading}>Nos services</p>
     <div className={style.serviceList}>
       {serviceData.map((service, idx) => (
@@ -131,10 +132,13 @@ const Service=()=> {
         </div>
       ))}
     </div>
-    <div>
-        <FooterNavbar/>
-      </div>
+        
   </div>
+      </div>
+      <div className="row m-0 p-0">
+      <FooterNavbar/>
+      </div>
+    
 
       
     
