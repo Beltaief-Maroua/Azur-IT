@@ -1,10 +1,8 @@
 import React from "react";
-import style from "../Stytle/Partner.module.css";
+import style from "../Stytle/InformationBox.module.css";
 import { Link } from 'react-router-dom';
 
-import vectorImage from "../assets/partnerIcon.png";
-
-const Partner = () => {
+const InformationBox = () => {
   return (
     <div className={`${style.container}`}>
       <main
@@ -39,4 +37,4 @@ const Partner = () => {
   );
 };
 
-export default Partner;
+export default InformationBox;

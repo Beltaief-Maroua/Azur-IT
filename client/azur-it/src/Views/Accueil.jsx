@@ -2,7 +2,7 @@ import React from "react";
 import style from "../Stytle/Accueil.module.css";
 import MyNavbar from "../Components/MyNavbar";
 import Mission from "../Components/Mission";
-import Partner from "../Components/Partner";
+import InformationBox from "../Components/InformationBox";
 import FooterNavbar from "../Components/FooterNavbar";
 
 import client1 from "../assets/clients/client1.png";
@@ -89,8 +89,8 @@ const Accueil = () => {
         <div className={style.missionSection}>
           <Mission />
         </div>
-        <div className={style.partnerSection}>
-          <Partner />
+        <div className={style.informationBoxSection}>
+          <InformationBox />
         </div>
         
           <FooterNavbar />
