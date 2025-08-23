@@ -55,6 +55,7 @@
 /* ===============================
    Mobile <767px
    =============================== */
+
 @media (max-width: 767px) {
   .navbar {
     width: 100vw;
@@ -122,35 +123,80 @@
 
 
 
+/* Default (desktop) */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 20px;
+}
 
+.navbarBrand img {
+  width: 150px;
+  height: 70px;
+  border-radius: 10px;
+}
 
-/* .container
-{
-    display: flex;
+.navbarNav {
+  display: flex;
+  gap: 20px;
+}
+
+.navItem {
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+/* Toggler hidden on desktop */
+.navbarToggler {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* ============== Mobile ============== */
+@media (max-width: 767px) {
+  .navbar {
+    position: relative;
+  }
+
+  .navbarToggler {
+    display: block;
+  }
+
+  .navbarNav {
+    position: absolute;
+    top: 100%;
+    left: 0;
     width: 100%;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 12px;
-    
-}
-.navbarBrand img
-{
-    width: 25vw;
-    border-radius: 10px;
-    width: 150px;
-    height: 70px;
-}
-.navbarNav
-{
-    width: 60vw;
-}
+    flex-direction: column;
+    background: #222; /* dark bg for dropdown */
+    max-height: 0;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.7);  /* black with 70% opacity */
+    backdrop-filter: blur(6px);      /* glass-like effect */
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+  }
 
-.navItem
-{
-    list-style: none;
+  .navbarNav.show {
+    max-height: 500px; /* enough to fit links */
+    opacity: 1;
+    font-size: 18px;
+  }
+
+  .navItem {
+    margin: 10px 0;
+    text-align: center;
+  }
 }
-.navLink
-{
-     text-decoration: none;
-     color: black;
-} */

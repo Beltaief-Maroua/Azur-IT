@@ -10,36 +10,25 @@ const MyNavbar = (props) => {
 
   return (
     <div className={style.container} id={props.bgc}>
-      <nav className={`${style.navbar} ${style.navbarLight} ${style.bgLight}`}>
-        <Link to="/accueil" className={style.navbarBrand}>
-          <img src={Logo} alt="logo" />
-        </Link>
+      <nav className={style.navbar}>
+      <Link to="/accueil" className={style.navbarBrand}>
+        <img src={Logo} alt="logo" />
+      </Link>
         <button
           className={style.navbarToggler}
-          id={props.bgc}
           onClick={toggleNavbar}
         >
           &#9776;
         </button>
-        {/* Menu avec slide + fade */}
-      </nav>
-          <ul className={`${style.navbarNav} ${style.navbarCollapse} ${isOpen ? style.show : ""}`}>
-            <li className={`${style.navItem} ${style.active}`}>
-              <Link to="/accueil" className={`${style.navLink}`}>Accueil</Link>
-            </li>
-            <li className={style.navItem}>
-              <Link to="/service" className={`${style.navLink}`}>Services</Link>
-            </li>
-            <li className={style.navItem}>
-              <Link to="/reference" className={`${style.navLink}`}>Références</Link>
-            </li>
-            <li className={style.navItem}>
-              <Link to="/partenaire" className={`${style.navLink}`}>Partenaires</Link>
-            </li>
-            <li className={style.navItem}>
-              <Link to="/contact" className={`${style.navLink}`}>Contacts</Link>
-            </li>
-          </ul>
+        <ul className={`${style.navbarNav} ${isOpen ? style.show : ""}`}>
+    <li className={style.navItem}><Link to="/accueil" className={style.navLink}>Accueil</Link></li>
+    <li className={style.navItem}><Link to="/service" className={style.navLink}>Services</Link></li>
+    <li className={style.navItem}><Link to="/reference" className={style.navLink}>Références</Link></li>
+    <li className={style.navItem}><Link to="/partenaire" className={style.navLink}>Partenaires</Link></li>
+    <li className={style.navItem}><Link to="/contact" className={style.navLink}>Contacts</Link></li>
+  </ul>
+  </nav>
+          
     </div>
   );
 };
