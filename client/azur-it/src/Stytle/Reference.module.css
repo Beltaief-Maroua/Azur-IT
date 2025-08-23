@@ -16,6 +16,181 @@
   margin-bottom: 60px;
 }
 
+/* ---- Slider ---- */
+.sliderContainer {
+  width: 80%; 
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.slide img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: block;
+}
+
+.slide img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* ---- Cards (mobile) ---- */
+.cardGrid {
+  display: none; /* masqué par défaut */
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+/* 📱 Mobile (≤767px) */
+@media (max-width: 767px) {
+  .container {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+
+  /* désactiver slider */
+  .sliderContainer {
+    display: none;
+  }
+
+  /* activer cards */
+  .cardGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 colonnes */
+    gap: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    
+  }
+  .card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+/* .card:hover ~ .card {
+  transform: scale(0.7);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+
+} */
+}
+
+/* 📲 Tablette (768–991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  .title {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+  }
+
+  .slide img {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* 💻 Petit desktop (992–1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .slide img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* 🖥️ Grand desktop (1200–1399px) */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .title {
+    font-size: 2.6rem;
+  }
+
+  .slide img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+/* 🖥️ Très grand écran (≥1400px) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1300px;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .slide img {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+
+
+
+
+/* .container {
+  width: 98vw;
+  height: 85vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--darkPurple);
+  margin-bottom: 60px;
+}
+
 .sliderContainer {
   width: 80%; 
   max-width: 1200px;
@@ -52,4 +227,4 @@
 .slide img:hover {
   transform: scale(1.1);
   box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
+} */

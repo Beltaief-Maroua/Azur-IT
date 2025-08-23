@@ -6,7 +6,9 @@ import FooterNavbar from "../Components/FooterNavbar";
 
 const Contact = () => {
   return (
-    <div>
+    <>
+    
+    <div className="row m-0 p-0">
       <MyNavbar bgc="navbarDark" />
       <div className={style.container}>
         <div className={style.content}>
@@ -90,8 +92,11 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <FooterNavbar />
     </div>
+    <div className="row m-0 p-0">
+        <FooterNavbar />
+      </div>
+    </>
   );
 };
 

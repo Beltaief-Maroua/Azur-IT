@@ -4,8 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "../Stytle/Reference.module.css";
 import MyNavbar from "../Components/MyNavbar";
-import FooterNavbar from '../Components/FooterNavbar';
-
+import FooterNavbar from "../Components/FooterNavbar";
 
 import creation from "../assets/references/4Bcreation.png";
 import bee from "../assets/references/bee.png";
@@ -53,23 +52,69 @@ const settings = {
   ],
 };
 
+
 const Reference = () => (
   <>
-  <MyNavbar bgc="navbarDark" />
-  <div className={style.container}>
-    <p className={style.title} id="title">Ils nous ont fait confiance</p>
-    <div className={style.sliderContainer}>
-      <Slider {...settings}>
+    <MyNavbar bgc="navbarDark" />
+    <div className={style.container}>
+      <p className={style.title} id="title">
+        Ils nous ont fait confiance
+      </p>
+
+      {/* Slider (desktop/tablette) */}
+      <div className={style.sliderContainer}>
+        <Slider {...settings}>
+          {logos.map((logo, idx) => (
+            <div key={idx} className={style.slide}>
+              <img src={logo} alt={`logo-${idx}`} />
+            </div>
+          ))}
+        </Slider>
+      </div>
+
+      {/* Cards (mobile) */}
+      <div className={style.cardGrid}>
         {logos.map((logo, idx) => (
-          <div key={idx} className={style.slide}>
+          <div key={idx} className={style.card}>
             <img src={logo} alt={`logo-${idx}`} />
           </div>
         ))}
-      </Slider>
+      </div>
     </div>
-  </div>
-  <FooterNavbar />
+
+    <div className="row m-0 p-0">
+      <FooterNavbar />
+    </div>
   </>
 );
 
+
+
+
 export default Reference;
+
+
+
+
+// const Reference = () => (
+//   <>
+//     <MyNavbar bgc="navbarDark" />
+//     <div className={style.container}>
+//       <p className={style.title} id="title">
+//         Ils nous ont fait confiance
+//       </p>
+//       <div className={style.sliderContainer}>
+//         <Slider {...settings}>
+//           {logos.map((logo, idx) => (
+//             <div key={idx} className={style.slide}>
+//               <img src={logo} alt={`logo-${idx}`} />
+//             </div>
+//           ))}
+//         </Slider>
+//       </div>
+//     </div>
+//     <div className="row m-0 p-0">
+//       <FooterNavbar />
+//     </div>
+//   </>
+// );
