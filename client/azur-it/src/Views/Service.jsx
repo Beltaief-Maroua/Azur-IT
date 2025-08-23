@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../Stytle/Service.module.css";
-import MyNavbar from "../Components/MyNavbar";
+import Navbar from "../Components/Navbar";
 import FooterNavbar from "../Components/FooterNavbar";
 import integrator from "../assets/services/integrator.png";
 import process from "../assets/services/process.png";
@@ -138,7 +138,7 @@ const Service = () => {
     <>
       <div className="row m-0 p-0">
         <div className={`${style.container} container-fluid m-0 p-0`}>
-          <MyNavbar bgc="navbarDark" />
+          <Navbar bgc="navbarDark" />
           <p className={style.heading}>Nos services</p>
           <div className={style.serviceList}>
             {serviceData.map((service, idx) => (

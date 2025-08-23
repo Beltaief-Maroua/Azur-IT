@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "../Stytle/Partenaire.module.css";
-import MyNavbar from "../Components/MyNavbar";
+import Navbar from "../Components/Navbar";
 import FooterNavbar from "../Components/FooterNavbar";
 
 import dell from "../assets/partenaires/dell.png";
@@ -32,7 +32,7 @@ const settings = {
 
 const Partenaire = () => (
   <>
-    <MyNavbar bgc="navbarDark" />
+    <Navbar bgc="navbarDark" />
     <div className={style.container}>
       <p className={style.title}>Nos Partenaires</p>
       <div className={style.sliderContainer}>

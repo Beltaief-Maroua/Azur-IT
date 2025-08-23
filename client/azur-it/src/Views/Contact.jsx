@@ -1,7 +1,7 @@
 import React from "react";
 import style from "../Stytle/Contact.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MyNavbar from "../Components/MyNavbar";
+import Navbar from "../Components/Navbar";
 import FooterNavbar from "../Components/FooterNavbar";
 
 const Contact = () => {
@@ -9,7 +9,7 @@ const Contact = () => {
     <>
     
     <div className="row m-0 p-0">
-      <MyNavbar bgc="navbarDark" />
+      <Navbar bgc="navbarDark" />
       <div className={style.container}>
         <div className={style.content}>
           <div className={style.informations}>

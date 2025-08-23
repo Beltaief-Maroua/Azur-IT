@@ -1,6 +1,6 @@
 import React from "react";
 import style from "../Stytle/Accueil.module.css";
-import MyNavbar from "../Components/MyNavbar";
+import Navbar from "../Components/Navbar";
 import Mission from "../Components/Mission";
 import InformationBox from "../Components/InformationBox";
 import FooterNavbar from "../Components/FooterNavbar";
@@ -18,7 +18,7 @@ import client9 from "../assets/clients/client9.png";
 const Accueil = () => {
   return (
     <div className={`${style.container} `}>
-      <MyNavbar bgc="navbarLight" />
+      <Navbar bgc="navbarLight" />
       <header
         className={`${style.header} d-flex flex-column align-items-center mt-lg-5 row-gap-3`}
       >

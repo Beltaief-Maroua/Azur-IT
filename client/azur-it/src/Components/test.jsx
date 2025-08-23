@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "../Stytle/Test.module.css";
-import MyNavbar from "./MyNavbar"
+import Navbar from "./Navbar"
 
 import creation from "../assets/references/4Bcreation.png";
 import bee from "../assets/references/bee.png";
@@ -53,7 +53,7 @@ const settings = {
 
 const PartnerSlider = () => (
   <>
-  <MyNavbar bgc="navbarDark" />
+  <Navbar bgc="navbarDark" />
   <div className={style.container}>
     <h2>Ils nous ont fait confiance</h2>
     <div className={style.sliderContainer}>

@@ -82,6 +82,10 @@
   height: 35px;
 }
 
+.link {
+  text-decoration: none;
+  color: #726D94;
+}
 /* ----- RESPONSIVE BREAKPOINTS ----- */
 
 /* SM (≤ 767px) → 1 carte par ligne */

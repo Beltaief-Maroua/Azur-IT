@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/logos/simpleLogo.png";
-import style from "../Stytle/MyNavbar.module.css";
-import "../Stytle/MyNavbar.css"
+import style from "../Stytle/Navbar.module.css";
+import "../Stytle/Navbar.css"
 import { Link } from 'react-router-dom';
 
 const MyNavbar = (props) => {

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import style from "../Stytle/Reference.module.css";
-import MyNavbar from "../Components/MyNavbar";
+import Navbar from "../Components/Navbar";
 import FooterNavbar from "../Components/FooterNavbar";
 
 import creation from "../assets/references/4Bcreation.png";
@@ -54,7 +54,7 @@ const settings = {
 
 const Reference = () => (
   <>
-    <MyNavbar bgc="navbarDark" />
+    <Navbar bgc="navbarDark" />
     <div className={style.container}>
       <p className={style.title} id="title">
         Ils nous ont fait confiance
