@@ -44,6 +44,13 @@ const Partenaire = () => (
           ))}
         </Slider>
       </div>
+      <div className={style.cardGrid}>
+        {logos.map((logo, idx) => (
+          <div key={idx} className={style.card}>
+            <img src={logo} alt={`logo-${idx}`} />
+          </div>
+        ))}
+      </div>
     </div>
     <div className="row m-0 p-0">
       <FooterNavbar />

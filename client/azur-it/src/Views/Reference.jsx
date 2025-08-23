@@ -52,7 +52,6 @@ const settings = {
   ],
 };
 
-
 const Reference = () => (
   <>
     <MyNavbar bgc="navbarDark" />
@@ -81,20 +80,13 @@ const Reference = () => (
         ))}
       </div>
     </div>
-
     <div className="row m-0 p-0">
       <FooterNavbar />
     </div>
   </>
 );
 
-
-
-
 export default Reference;
-
-
-
 
 // const Reference = () => (
 //   <>
