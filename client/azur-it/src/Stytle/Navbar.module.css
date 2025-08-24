@@ -177,12 +177,12 @@
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
     background: #222; /* dark bg for dropdown */
     max-height: 0;
     overflow: hidden;
-    background: rgba(0, 0, 0, 0.7);  /* black with 70% opacity */
+    background: rgba(77, 3, 226, 0.2);  /* black with 70% opacity */
     backdrop-filter: blur(6px);      /* glass-like effect */
     opacity: 0;
     overflow: hidden;
@@ -196,7 +196,8 @@
   }
 
   .navItem {
-    margin: 10px 0;
+    margin: 1px 0;
     text-align: center;
+    font-size: 30px;
   }
 }
